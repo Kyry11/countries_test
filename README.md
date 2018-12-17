@@ -19,3 +19,8 @@ Run `ng test` to execute the unit tests via Karma.
 
 ## Notes
 
+Some things that can be done to increase the quality of this repo if there was time:
+ - Unit tests can be more exhaustive, especially around observables
+ - Integrate sonarqube into the build pipeline to get more common issues surfaced sooner
+ - Introduce either e2e or Selenium based tests for completness
+ - Scope out further requirments so the proposed solution fits usage patterns better
