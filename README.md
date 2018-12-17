@@ -5,6 +5,10 @@ Please install it globally if you don't have it by running:
 
 `npm install -g @angular/cli`
 
+## Install dependencies
+
+Run `npm install` to set up npm package dependencies in the project folder
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
