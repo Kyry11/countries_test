@@ -10,7 +10,7 @@ describe('CountryHistoryComponent', () => {
   let component: SearchHistoryComponent;
 
   const mockIso = 'AUS';
-  const mockHeaders = [{"name":"Australia","alpha3Code":"AUS"}, {"name":"Afghanistan","alpha3Code":"AFG"}, {"name":"Åland Islands","alpha3Code":"ALA"}];
+  const mockHeaders = [{'name':'Australia','alpha3Code':'AUS'}, {'name':'Afghanistan','alpha3Code':'AFG'}, {'name':'Åland Islands','alpha3Code':'ALA'}];
   
   const mockRouter: Router = {
     events: of(new NavigationEnd(1, '', ''))

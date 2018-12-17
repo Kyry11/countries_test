@@ -6,7 +6,7 @@ import { filter, flatMap, map, tap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'country-info',
+  selector: 'app-country-info',
   templateUrl: './country-info.component.html',
   styleUrls: ['./country-info.component.scss']
 })

@@ -9,7 +9,7 @@ describe('CountrySearchComponent', () => {
   
   let component: CountrySearchComponent;
 
-  const mockHeaders = [{"name":"Australia","alpha3Code":"AUS"}, {"name":"Afghanistan","alpha3Code":"AFG"}, {"name":"Åland Islands","alpha3Code":"ALA"}];
+  const mockHeaders = [{'name':'Australia','alpha3Code':'AUS'}, {'name':'Afghanistan','alpha3Code':'AFG'}, {'name':'Åland Islands','alpha3Code':'ALA'}];
   
   const mockRouter: Router = {
     navigate: (parms: any[]) => null
@@ -154,7 +154,7 @@ describe('CountrySearchComponent', () => {
 
   it('should limit the result set to 10 items when there are more matches', (done) => {
     
-    const elevenMatches = [{"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"}, {"name":"Australia","alpha3Code":"AUS"},{"name":"Australia","alpha3Code":"AUS"}];
+    const elevenMatches = [{'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'}, {'name':'Australia','alpha3Code':'AUS'},{'name':'Australia','alpha3Code':'AUS'}];
 
     const spygetAllCountryHeadersCached = spyOn(mockService, 'getAllCountryHeadersCached').and.returnValue(of(elevenMatches));
 
