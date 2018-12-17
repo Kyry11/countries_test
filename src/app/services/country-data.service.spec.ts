@@ -4,6 +4,7 @@ import { CountryDataService } from './country-data.service';
 import { COUNTRY_API_BASE_URL, COUNTRY_API_ISO_URL, COUNTRY_API_ALL_URL } from './config';
 import { COUNTRY_SUMMARY_FIELDS, CountrySummary, CountryHeader, COUNTRY_HEADER_FIELDS } from './typings';
 import { take } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 describe('LocationService', () => {
 
