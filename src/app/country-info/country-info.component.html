@@ -1,0 +1,12 @@
+<div *ngIf="summary$ | async as summary" class="card">
+  <img class="card-img-top" [src]="summary.flag" alt="Country Flag">
+  <div class="card-body">
+    <h5 class="card-title">{{summary.name}}</h5>
+    <p class="card-text">Here are some fun facts about {{summary.name}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Currencies: {{summary.currencies | currencyInfo}}</li>
+    <li class="list-group-item">Location: {{summary.latlng | latlong}}</li>
+    <li class="list-group-item">Area: {{summary.area}} km²</li>
+  </ul>
+</div>

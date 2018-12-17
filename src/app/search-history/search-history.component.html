@@ -1,0 +1,8 @@
+<div *ngIf="history$ | async" class="card">
+  <div class="card-header">
+    Recently viewed countries:
+  </div>
+  <ul class="list-group">
+    <li *ngFor="let country of history"><a [routerLink]="'/country/' + country.alpha3Code" class="list-group-item">{{country.name}} ({{country.alpha3Code}})</a></li>
+  </ul>
+</div>

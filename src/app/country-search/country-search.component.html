@@ -1,0 +1,7 @@
+<div class="card text-center">
+  <div class="card-body">
+    <h5 class="card-title">Please use the field below to find a country</h5>
+    <p class="card-text">You can search by country names or iso codes</p>
+    <input id="typeahead-basic" type="text" class="form-control" [ngbTypeahead]="search" [resultFormatter]="formatter" [inputFormatter]="formatter" (selectItem)="selectItem($event)" placeholder="Start typing a country name.."/>
+  </div>
+</div>
