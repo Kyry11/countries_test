@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CountryDataService } from '../services/country-data.service';
 import { CountrySummary } from '../services/typings';
-import { filter, flatMap, map, tap } from 'rxjs/operators';
+import { filter, flatMap, map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 
 @Component({

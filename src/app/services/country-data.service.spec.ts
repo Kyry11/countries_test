@@ -1,10 +1,8 @@
-import { async } from '@angular/core/testing';
 import { TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { CountryDataService } from './country-data.service';
 import { COUNTRY_API_BASE_URL, COUNTRY_API_ISO_URL, COUNTRY_API_ALL_URL } from './config';
 import { COUNTRY_SUMMARY_FIELDS, CountrySummary, CountryHeader, COUNTRY_HEADER_FIELDS } from './typings';
-import { Observable, of } from 'rxjs';
 import { take } from 'rxjs/operators';
 
 describe('LocationService', () => {

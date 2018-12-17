@@ -2,8 +2,6 @@ import { SearchHistoryComponent } from './search-history.component';
 import { of } from 'rxjs';
 import { CountryDataService } from '../services/country-data.service';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { tap } from 'rxjs/operators';
-import { NgbTypeaheadSelectItemEvent } from '@ng-bootstrap/ng-bootstrap/typeahead/typeahead';
 
 describe('CountryHistoryComponent', () => {
   
